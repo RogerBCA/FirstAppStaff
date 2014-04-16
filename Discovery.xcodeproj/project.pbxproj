@@ -21,6 +21,7 @@
 		59CB93D618FDDBEC0058654A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CB93B818FDDBEC0058654A /* UIKit.framework */; };
 		59CB93DE18FDDBED0058654A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59CB93DC18FDDBED0058654A /* InfoPlist.strings */; };
 		59CB93E018FDDBED0058654A /* DiscoveryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CB93DF18FDDBED0058654A /* DiscoveryTests.m */; };
+		59EE75EF18FDFCBA005568DE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 59EE75EE18FDFCBA005568DE /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		59CB93DB18FDDBED0058654A /* DiscoveryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiscoveryTests-Info.plist"; sourceTree = "<group>"; };
 		59CB93DD18FDDBED0058654A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59CB93DF18FDDBED0058654A /* DiscoveryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryTests.m; sourceTree = "<group>"; };
+		59EE75EE18FDFCBA005568DE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../django/discovery/src/static/img/logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,8 @@
 				59CB93C618FDDBEC0058654A /* Main.storyboard */,
 				59CB93C918FDDBEC0058654A /* ViewController.h */,
 				59CB93CA18FDDBEC0058654A /* ViewController.m */,
+				59EE75EC18FDFC08005568DE /* static */,
+				59EE75F118FDFD02005568DE /* wellcome */,
 				59CB93CC18FDDBEC0058654A /* Images.xcassets */,
 				59CB93BB18FDDBEC0058654A /* Supporting Files */,
 			);
@@ -150,6 +154,29 @@
 				59CB93DC18FDDBED0058654A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59EE75EC18FDFC08005568DE /* static */ = {
+			isa = PBXGroup;
+			children = (
+				59EE75ED18FDFC19005568DE /* img */,
+			);
+			name = static;
+			sourceTree = "<group>";
+		};
+		59EE75ED18FDFC19005568DE /* img */ = {
+			isa = PBXGroup;
+			children = (
+				59EE75EE18FDFCBA005568DE /* logo.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		59EE75F118FDFD02005568DE /* wellcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = wellcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59EE75EF18FDFCBA005568DE /* logo.png in Resources */,
 				59CB93CD18FDDBEC0058654A /* Images.xcassets in Resources */,
 				59CB93BF18FDDBEC0058654A /* InfoPlist.strings in Resources */,
 				59CB93C818FDDBEC0058654A /* Main.storyboard in Resources */,
@@ -456,6 +484,7 @@
 				59CB93E518FDDBED0058654A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59CB93E618FDDBED0058654A /* Build configuration list for PBXNativeTarget "DiscoveryTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +493,7 @@
 				59CB93E818FDDBED0058654A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
