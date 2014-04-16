@@ -20,17 +20,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2bH-0l-RMI">
+                                <rect key="frame" x="141" y="526" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="6st-l4-IQ9" secondAttribute="centerX" id="2gH-lU-icS"/>
+                            <constraint firstAttribute="centerX" secondItem="2bH-0l-RMI" secondAttribute="centerX" id="3BM-Zs-rNM"/>
                             <constraint firstItem="6st-l4-IQ9" firstAttribute="leading" secondItem="jxB-WI-x78" secondAttribute="leading" id="Ge5-86-uje"/>
+                            <constraint firstItem="obJ-s8-fmo" firstAttribute="top" secondItem="2bH-0l-RMI" secondAttribute="bottom" constant="5" id="QvJ-qJ-OLF"/>
                             <constraint firstItem="obJ-s8-fmo" firstAttribute="top" secondItem="6st-l4-IQ9" secondAttribute="bottom" id="Tgq-wI-fdt"/>
                             <constraint firstAttribute="centerY" secondItem="6st-l4-IQ9" secondAttribute="centerY" id="dzt-Pc-dnd"/>
                             <constraint firstAttribute="trailing" secondItem="6st-l4-IQ9" secondAttribute="trailing" id="o5W-7P-lKX"/>
                             <constraint firstItem="6st-l4-IQ9" firstAttribute="top" secondItem="jxB-WI-x78" secondAttribute="top" id="zgt-0p-26G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Contenedor1" destination="l4G-Yr-gxk" id="O1X-LI-uNO"/>
+                        <outlet property="Contenedor2" destination="kIT-ld-Fhh" id="qvK-L2-lIE"/>
+                        <outlet property="Contenedor3" destination="f1h-Vx-1PS" id="qfT-y4-Gd4"/>
+                        <outlet property="MiScrollview" destination="6st-l4-IQ9" id="KXC-5N-92K"/>
+                        <outlet property="paginacionwellcome" destination="2bH-0l-RMI" id="DWV-YL-IHJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnx-HK-gJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <containerView contentMode="scaleToFill" id="l4G-Yr-gxk">

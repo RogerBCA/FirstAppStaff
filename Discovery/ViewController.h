@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate>
+{
+    NSArray *GrupoContenedores;
+}
+
+@property (weak, nonatomic) IBOutlet UIScrollView *MiScrollview;
+@property (strong, nonatomic) IBOutlet UIView *Contenedor1;
+@property (strong, nonatomic) IBOutlet UIView *Contenedor2;
+@property (strong, nonatomic) IBOutlet UIView *Contenedor3;
+@property (weak, nonatomic) IBOutlet UIPageControl *paginacionwellcome;
 
 @end
