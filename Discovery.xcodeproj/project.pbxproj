@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590453ED18FE3FEE00CED068 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 590453EC18FE3FEE00CED068 /* logo.png */; };
+		590453F418FEE94A00CED068 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590453F318FEE94A00CED068 /* SWRevealViewController.m */; };
 		59CB93B518FDDBEC0058654A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CB93B418FDDBEC0058654A /* Foundation.framework */; };
 		59CB93B718FDDBEC0058654A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CB93B618FDDBEC0058654A /* CoreGraphics.framework */; };
 		59CB93B918FDDBEC0058654A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CB93B818FDDBEC0058654A /* UIKit.framework */; };
@@ -21,7 +23,6 @@
 		59CB93D618FDDBEC0058654A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CB93B818FDDBEC0058654A /* UIKit.framework */; };
 		59CB93DE18FDDBED0058654A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59CB93DC18FDDBED0058654A /* InfoPlist.strings */; };
 		59CB93E018FDDBED0058654A /* DiscoveryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CB93DF18FDDBED0058654A /* DiscoveryTests.m */; };
-		59EE75EF18FDFCBA005568DE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 59EE75EE18FDFCBA005568DE /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		590453EC18FE3FEE00CED068 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		590453F218FEE94A00CED068 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		590453F318FEE94A00CED068 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		59CB93B118FDDBEC0058654A /* Discovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CB93B418FDDBEC0058654A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		59CB93B618FDDBEC0058654A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +58,6 @@
 		59CB93DB18FDDBED0058654A /* DiscoveryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiscoveryTests-Info.plist"; sourceTree = "<group>"; };
 		59CB93DD18FDDBED0058654A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59CB93DF18FDDBED0058654A /* DiscoveryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryTests.m; sourceTree = "<group>"; };
-		59EE75EE18FDFCBA005568DE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../django/discovery/src/static/img/logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590453F118FEE92400CED068 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				590453F218FEE94A00CED068 /* SWRevealViewController.h */,
+				590453F318FEE94A00CED068 /* SWRevealViewController.m */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
 		59CB93A818FDDBEC0058654A = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,7 @@
 		59CB93BA18FDDBEC0058654A /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				590453F118FEE92400CED068 /* lib */,
 				59CB93C318FDDBEC0058654A /* AppDelegate.h */,
 				59CB93C418FDDBEC0058654A /* AppDelegate.m */,
 				59CB93C618FDDBEC0058654A /* Main.storyboard */,
@@ -167,7 +180,7 @@
 		59EE75ED18FDFC19005568DE /* img */ = {
 			isa = PBXGroup;
 			children = (
-				59EE75EE18FDFCBA005568DE /* logo.png */,
+				590453EC18FE3FEE00CED068 /* logo.png */,
 			);
 			name = img;
 			sourceTree = "<group>";
@@ -255,7 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59EE75EF18FDFCBA005568DE /* logo.png in Resources */,
+				590453ED18FE3FEE00CED068 /* logo.png in Resources */,
 				59CB93CD18FDDBEC0058654A /* Images.xcassets in Resources */,
 				59CB93BF18FDDBEC0058654A /* InfoPlist.strings in Resources */,
 				59CB93C818FDDBEC0058654A /* Main.storyboard in Resources */,
@@ -280,6 +293,7 @@
 				59CB93CB18FDDBEC0058654A /* ViewController.m in Sources */,
 				59CB93C518FDDBEC0058654A /* AppDelegate.m in Sources */,
 				59CB93C118FDDBEC0058654A /* main.m in Sources */,
+				590453F418FEE94A00CED068 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

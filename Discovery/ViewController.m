@@ -26,7 +26,7 @@
 {
     [super viewDidAppear:animated];
     CGRect scrollframe = self.MiScrollview.bounds;
-    for (int k=0; k<=GrupoContenedores.count; k++) {
+    for (int k=0; k<GrupoContenedores.count; k++) {
         CGRect actual = scrollframe;
         actual.origin.x += actual.size.width*k;
         ((UIView *)GrupoContenedores[k]).frame = actual;
