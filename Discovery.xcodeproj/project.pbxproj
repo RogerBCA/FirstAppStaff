@@ -30,6 +30,8 @@
 		59CB93D618FDDBEC0058654A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CB93B818FDDBEC0058654A /* UIKit.framework */; };
 		59CB93DE18FDDBED0058654A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59CB93DC18FDDBED0058654A /* InfoPlist.strings */; };
 		59CB93E018FDDBED0058654A /* DiscoveryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CB93DF18FDDBED0058654A /* DiscoveryTests.m */; };
+		59E884DD1905FE0D00A19D5E /* ContentedorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E884DC1905FE0D00A19D5E /* ContentedorViewController.m */; };
+		59E884E0190600EC00A19D5E /* NoticiasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E884DF190600EC00A19D5E /* NoticiasTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		59CB93DB18FDDBED0058654A /* DiscoveryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiscoveryTests-Info.plist"; sourceTree = "<group>"; };
 		59CB93DD18FDDBED0058654A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59CB93DF18FDDBED0058654A /* DiscoveryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryTests.m; sourceTree = "<group>"; };
+		59E884DB1905FE0D00A19D5E /* ContentedorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentedorViewController.h; sourceTree = "<group>"; };
+		59E884DC1905FE0D00A19D5E /* ContentedorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentedorViewController.m; sourceTree = "<group>"; };
+		59E884DE190600EC00A19D5E /* NoticiasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiasTableViewController.h; sourceTree = "<group>"; };
+		59E884DF190600EC00A19D5E /* NoticiasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiasTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 			children = (
 				5954320018FEF6FE002489C7 /* InicioViewController.h */,
 				5954320118FEF6FE002489C7 /* InicioViewController.m */,
+				59E884DE190600EC00A19D5E /* NoticiasTableViewController.h */,
+				59E884DF190600EC00A19D5E /* NoticiasTableViewController.m */,
 			);
 			name = Inicio;
 			sourceTree = "<group>";
@@ -133,6 +141,8 @@
 			children = (
 				5954320718FF120F002489C7 /* LAteralTableViewController.h */,
 				5954320818FF120F002489C7 /* LAteralTableViewController.m */,
+				59E884DB1905FE0D00A19D5E /* ContentedorViewController.h */,
+				59E884DC1905FE0D00A19D5E /* ContentedorViewController.m */,
 			);
 			name = Sidebar;
 			sourceTree = "<group>";
@@ -298,6 +308,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Roger Cruz";
 				TargetAttributes = {
+					59CB93B018FDDBEC0058654A = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
 					59CB93D118FDDBEC0058654A = {
 						TestTargetID = 59CB93B018FDDBEC0058654A;
 					};
@@ -355,6 +372,8 @@
 			files = (
 				59CB93CB18FDDBEC0058654A /* ViewController.m in Sources */,
 				59CB93C518FDDBEC0058654A /* AppDelegate.m in Sources */,
+				59E884E0190600EC00A19D5E /* NoticiasTableViewController.m in Sources */,
+				59E884DD1905FE0D00A19D5E /* ContentedorViewController.m in Sources */,
 				59CB93C118FDDBEC0058654A /* main.m in Sources */,
 				5954320218FEF6FE002489C7 /* InicioViewController.m in Sources */,
 				5954320918FF120F002489C7 /* LAteralTableViewController.m in Sources */,
